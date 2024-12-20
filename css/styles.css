@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+.background-image {
+  position: fixed;
+  top: 40%;
+  transform: translateY(-40%);
+  left: 37%;
+  width: 50vw;
+  height: 80vh;
+  background-image: url("../img/bg-illustration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+}
+
+.header .title-image {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #3662E3;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #111729;
+  padding: 5px;
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #111729;
+  color: #cbd5e1;
+  font-size: 16px;
+  padding: 12px 25px ;
+  border-radius: 10px;
+}
+
+.btn-generate {
+  background-color: #3662E3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-generate:hover {
+  background-color: #2563eb;
+}
+
+.input-field::placeholder {
+  color: #364153;
+}
+
+.qrcode {
+  margin: 20px auto;
+  margin-bottom: 70px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn-action {
+  background-color: #3662e3;
+  color: #ffffff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: #2563eb;
+}
+
+.logo {
+  position: fixed;
+  top: 50px;
+  left: 50px; 
+  z-index: 1000;
+}
+
+.logo-image {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.1);
+}
+
+.qrcode-wrapper {
+  position: relative;
+  display: inline-block; 
+}
+
+.qrcode-wrapper::before {
+  content: ""; 
+  position: absolute; 
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 325px; 
+  height: 325px; 
+  background-color: #4e80ee33; 
+  border-radius: 50%; 
+  z-index: -1; 
+}

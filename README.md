@@ -30,12 +30,21 @@ This QR code generator allows users to enter a URL and get their QR code immedia
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- QR Code library: [QRCode.js](https://github.com/davidshimjs/qrcodejs) or other of your choice.  
+- QR Code library: [QRCode.js](https://github.com/davidshimjs/qrcodejs).
 
 ### Additional tools:
 
 - Git and GitHub for version control.
 - Visual Studio Code as code editor.
+
+## 📌 Learnings
+
+In this project, I reinforced my experience in:
+
+- Implementation of external libraries in pure JavaScript.
+- Creating functional and attractive user interfaces with HTML5 and CSS3.
+- Using JavaScript events to add interactivity.
+- Designing responsive web applications.
 
 ## 📧 Contact
 

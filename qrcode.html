@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Your QR Code</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/logo-qr-generator.svg" alt="QR Code Logo" class="logo-image">
+      </a>
+    </div>
+
+    <div class="background-image"></div>
+
+    <div class="qrcode-wrapper">
+      <div id="qrcode" class="qrcode"></div>
+    </div>
+
+    <div class="button-container">
+      <button id="btn-download" class="btn-action">Download ⬇</button>
+      <button id="btn-share" class="btn-action">Share 🔗</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="./js/qrcode.js"></script>
+</body>
+
+</html>
